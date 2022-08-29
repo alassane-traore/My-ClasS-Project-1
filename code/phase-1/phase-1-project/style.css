@@ -1,0 +1,56 @@
+#allclass {position: relative;
+    background-color: antiquewhite;
+    background-image: -moz-repeating-linear-gradient() ;
+scroll-behavior: unset;}
+
+index.body > h1 {size: 0vmax; position: center; 
+    scrollbar-highlight-color: black;}
+    index.body.header.h2 > header{
+        justify-content: right; 
+        perspective-origin: top;
+        color-interpolation-filters: inherit; 
+        align-content: flex-end;
+        content: icon;
+    }
+    index.body.header.h2 > a {
+        animation: account 3ms timing-function delay 2 direction fill-mode;
+    }
+
+    #signin {
+        animation: alternate;
+    }
+
+    #battom-img {
+        animation: forwards;
+    }
+    #home-class {
+        background-color: blue;
+    }
+    home.boby {
+        justify-content: left; 
+        perspective-origin: bottom; color: azure;
+        background-image: -moz-repeating-linear-gradient(2);
+        background-image: -moz-radial-gradient(2);
+    }
+    #amphi-remove {
+        color: red;
+    }
+    #amphi-list {
+        color:black;
+    }
+    #add-amph {
+        color: goldenrod;
+    }
+    #occup {
+        color: maroon;
+    }
+#avail {
+    color:green
+}
+#buk {
+    color: black;
+}
+
+#stform {
+    position: -ms-page; justify-content: center;
+}
