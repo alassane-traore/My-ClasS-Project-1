@@ -1,19 +1,39 @@
 const signin = document.getElementById ('signin');
 function signincondition (){
-    alert('be sure your institution have an account !'); 
+    alert('get ready your Registration number!'); 
 }
 signin.addEventListener ('click', signincondition);
-const home = document.getElementById ('home-class');
-const studentSubsmit = document.getElementById('now-student');
+
+const studentSubsmit = document.getElementById ('now-student');
+const home = document.querySelectorAll ('home-class') ; 
+
 
 function goToHomepage (){
     console.log (home)
         }
-const studentPass = document.getElementsByName('Registration Number');
+
 function accepted () {
-  if (studentPass = [1,2,3]|| [2,2,1] ||[4,5,6]){goToHomepage } else {
+  const studentPass = document.getElementsByName('Registration Number');
+  if (studentPass = [1,2,3]|| [2,2,1] ||[4,5,6]){
+    goToHomepage } else {
     'This Registration Number does not refer to registerd institution !';
 }}
 
 studentPass.addEventListener ('input', '');
 studentSubsmit.addEventListener('click',goToHomepage);
+
+
+//const octokit = new Octokit({
+   // auth: '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'
+  //});
+  
+    
+
+  https://developers.google.com/google-apps/calendar/
+
+//https://extendsclass.com/json-storage.html
+
+//https://form2channel.com/
+
+https://github.com/Hipo/university-domains-list
+

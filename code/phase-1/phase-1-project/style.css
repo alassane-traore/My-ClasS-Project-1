@@ -1,23 +1,21 @@
 #allclass {position: relative;
-    background-color: antiquewhite;
-    background-image: -moz-repeating-linear-gradient() ;
-scroll-behavior: unset;}
+    background-color: black;
+scroll-behavior: unset;
+background-image: url(./img/background.png);
+background-size: cover;
+}
+#index-title {
+color: gold
+}
 
-index.body > h1 {size: 0vmax; position: center; 
-    scrollbar-highlight-color: black;}
-    index.body.header.h2 > header{
-        justify-content: right; 
-        perspective-origin: top;
-        color-interpolation-filters: inherit; 
-        align-content: flex-end;
-        content: icon;
-    }
-    index.body.header.h2 > a {
-        animation: account 3ms timing-function delay 2 direction fill-mode;
-    }
+
+#regis {
+    color: aliceblue; justify-items: right;
+}
+   
 
     #signin {
-        animation: alternate;
+        animation: alternate; color: gold; justify-items: center;
     }
 
     #battom-img {
@@ -26,12 +24,8 @@ index.body > h1 {size: 0vmax; position: center;
     #home-class {
         background-color: blue;
     }
-    home.boby {
-        justify-content: left; 
-        perspective-origin: bottom; color: azure;
-        background-image: -moz-repeating-linear-gradient(2);
-        background-image: -moz-radial-gradient(2);
-    }
+   
+    
     #amphi-remove {
         color: red;
     }
@@ -53,4 +47,22 @@ index.body > h1 {size: 0vmax; position: center;
 
 #stform {
     position: -ms-page; justify-content: center;
+}
+#body-class {
+    place-content: right;
+    margin-left: 69%;
+    background-color: black;
+}
+#index-title {
+    margin-left: -95%;
+}
+#accounte{
+    color: green;
+}
+#about {
+    color: aliceblue;
+}
+
+#contact {
+    color: aliceblue;
 }
