@@ -9,11 +9,12 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
     </head>
 <body>
-    <h1 id="regisWelcome"> <strong> Have a class experience with ClasS!</strong></h1>
+    <script src="./index.js"></script>
+    <h1 id="regisWelcome"> <strong> ClasS!</strong></h1>
     <p> Kindly fill the registration form to create an institution Account! </p>  
     <form action="" method="post">
         <ul>
-            <li><p> institution representative </p>
+            <li><p id="chair"> institution representative </p>
             </li>
             <li>  
                 <label for="Name" >Name</label>
@@ -21,7 +22,7 @@
             </li>
             <li>
                 <label for="Title"> Title </label>
-        <input type="text" id="Name" placeholder=" academic Title" >
+        <input type="text" id="title" placeholder=" academic Title" >
             </li>
             <li>
                 <label for=" Email">Email</label>
@@ -36,32 +37,79 @@
             </li>
             <li>
                 <label for="instname"> Institution Name</label>
-                <input type="text" placeholder="Institution Fullame">
+                <input type="text" id="InstName" placeholder="Institution Fullame">
             </li>
             <li>
                 <label for="Address"> Address </label>
-                <input type="text" placeholder="Physical address" >
+                <input type="text" id="Instaddress" placeholder="Physical address" >
             </li>
             <li>
                 <label for="Email"> Email</label>
-                <input type="email" name="instemail" id="instemail">
+                <input type="email" name="instemail" id="Instemail">
             </li>
             <li>
-                <label for="students list">Student List</label>
-                <input type="file" name="Stlist" id="Stlist" accept="txt,odf, pdf" >
+                <label for="students Keys" id="Keys">Students Keys</label> 
+                <br>
+                <input type="text" id="stkey" placeholder="pass all the Keys you want your students to sign in with !">
+            </li>
+            <li>
+                <label for="student List"> Student List</label>
+                <br>
+                <input type="text" name="Stlist" id="Stlist" placeholder="pass the complete names of all your students separated with a comma !">
             </li>
            <li>
             <label for="day"> Date</label>
-            <input type="datetime-local" name="day" id="day">
+            <input type="datetime" name="day" id="day">
            </li>
            <li>
             <label for="Password">Password</label>
             <input type="password" name="Password" id="Password" placeholder="create Password" >
            </li>
            <li>
-            <a href="./home.html"><input type="submit"></a>
+            <a onclick="addInstitution()" id ="submitAccounte"><input type="submit"></a>
            </li>
         </ul>  
     </form>
+    <script>
+
+
+        let institutions = [];
+
+    function addInstitution(){
+        let accounteEvent = document.getElementById('submitAccounte')
+         event.preventDefault();   
+        let newInstitution = {
+        institutionChair:
+        { id:Date.now,
+            chairName : document.getElementById('Name').value,
+    chairTitle: document.getElementById('title').value,
+    chairMail : document.getElementById('Email').value,
+    chairPhone : document.getElementById("telephone").value
+},
+Institution:{
+    id:Date.now,
+institutionName : document.getElementById('InstName').value,
+institutionAddress: document.getElementById("Instaddress").value,
+institutionMail:document.getElementById("Instemail").value,
+Members :  {id:Date.now,
+    memberNames : document.getElementById("Stlist").value,
+   memberKeys: document.getElementById("stkey").value
+},
+inscriptionDay :document.getElementById("day").value,
+accountePass : document.getElementById("Password").value
+
+}
+     }
+
+        institutions.push(newInstitution);
+        document.forms[0].reset();
+        let NameOfInstitution = document.getElementById('InstName').value
+        localStorage.setItem( `${NameOfInstitution}`, JSON.stringify(institutions));
+        console.log(institutions);
+    }
+    
+    
+        
+    </script>
 </body>
- </html>
+</html>
