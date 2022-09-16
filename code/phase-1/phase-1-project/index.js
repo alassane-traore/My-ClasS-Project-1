@@ -229,28 +229,7 @@
 
 
   
-    //visityourCampus ()
-   
-   
-  
- 
-
-
-    
-    
-
-  
-
-
-
-
-
-
-
-
-
-
-
+    //visityourCampus
 
 //const octokit = new Octokit({
    // auth: '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'
@@ -265,4 +244,22 @@
 //https://form2channel.com/
 
 //https://github.com/Hipo/university-domains-list
+
+//const server = require('express');
+//const serverApp = express();
+//serverApp.listen (3000,()=>console.log( 3000'));
+
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBuh2O_PqsMw2EPDa2yxfPIcSTx2OdgbeQ",
+  authDomain: "class-3580a.firebaseapp.com",
+  projectId: "class-3580a",
+  storageBucket: "class-3580a.appspot.com",
+  messagingSenderId: "640625394076",
+  appId: "1:640625394076:web:1c102f93ab21372eb98859",
+  measurementId: "G-0T98FS74GJ"
+};
+//firebase.initializeApp(firebaseConfig)
+
+
 

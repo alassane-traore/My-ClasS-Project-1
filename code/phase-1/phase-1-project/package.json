@@ -1,6 +1,22 @@
 {
   "dependencies": {
-    "json-server": "^0.4.2",
+    "express": "^4.18.1",
+    "firebase": "^9.10.0",
+    "json-server": "^0.17.0",
     "nedb": "^1.8.0"
-  }
+  },
+  "name": "phase-1-project",
+  "version": "1.0.0",
+  "description": "\"date of my user inpute\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "\"university\"",
+    "\"data\"",
+    "\"class\""
+  ],
+  "author": "\"Alassane TRAORE\"",
+  "license": "ISC"
 }
